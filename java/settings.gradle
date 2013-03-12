@@ -1,0 +1,1 @@
+include 'shared', 'classic_tdd_example', 'jmock_example', 'mockito_example'

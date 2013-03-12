@@ -1,0 +1,11 @@
+tmp/
+doc/
+.DS_Store
+.tags*
+.exrc
+nohup.out
+*.sublime-project
+*.sublime-workspace
+.gradle/
+build/
+Gemfile.lock

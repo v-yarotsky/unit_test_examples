@@ -1,0 +1,33 @@
+allprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.+'
+    }
+}
+
+project(':classic_tdd_example') {
+    dependencies {
+        compile project(':shared')
+    }
+}
+
+project(':mockito_example') {
+    dependencies {
+        compile project(':shared')
+        testCompile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
+    }
+}
+
+project(':jmock_example') {
+    dependencies {
+        compile project(':shared')
+        testCompile group: 'org.jmock', name: 'jmock', version: '2.5.+'
+        testCompile group: 'org.jmock', name: 'jmock-junit4', version: '2.5.+'
+    }
+}
+
