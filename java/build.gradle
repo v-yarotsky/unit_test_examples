@@ -26,8 +26,8 @@ project(':mockito_example') {
 project(':jmock_example') {
     dependencies {
         compile project(':shared')
-        testCompile group: 'org.jmock', name: 'jmock', version: '2.5.+'
-        testCompile group: 'org.jmock', name: 'jmock-junit4', version: '2.5.+'
+        testCompile group: 'org.jmock', name: 'jmock', version: '2.6.+'
+        testCompile group: 'org.jmock', name: 'jmock-junit4', version: '2.6.+'
     }
 }
 

@@ -24,8 +24,8 @@ public class OrderTest {
         final Warehouse warehouse = context.mock(Warehouse.class);
 
         context.checking(new Expectations() {{
-            oneOf (warehouse).hasInventory(TALISKER, 50); will(returnValue(true));
-            oneOf (warehouse).remove(TALISKER, 50);
+            oneOf(warehouse).hasInventory(TALISKER, 50); will(returnValue(true));
+            oneOf(warehouse).remove(TALISKER, 50);
         }} );
 
         order.fill(warehouse);
@@ -38,7 +38,7 @@ public class OrderTest {
         final Warehouse warehouse = context.mock(Warehouse.class);
 
         context.checking(new Expectations() {{
-            oneOf (warehouse).hasInventory(TALISKER, 50); will(returnValue(false));
+            oneOf(warehouse).hasInventory(TALISKER, 50); will(returnValue(false));
         }} );
 
         order.fill(warehouse);
