@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
 gem "minitest", "~> 4.6"
-gem "rspec", "~> 2.11"
-gem "rake",  "~> 0.9"
+gem "rspec", "~> 2.13"
+gem "rake"

@@ -1,4 +1,5 @@
 require 'minitest/unit'
+require 'minitest/pride'
 require 'minitest/autorun'
 
 $:.unshift File.expand_path("../../lib")
